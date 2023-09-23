@@ -52,8 +52,73 @@
 
 // const bigNumber = 354268298476282
 
+// -------------------------------------------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // 2. Non-Primitive datatype (These all non - primitive datatypes are call by reference)
 
 // types - Array, Object, functions
+
+
+// 1. Array
+
+// In JavaScript, an array is a special kind of object that can be used to store and manipulate ordered data items. Arrays are zero-indexed, meaning that the first element of an array is at index 0, the second element is at index 1, and so on.
+
+// const heros = ["pratik", "pradyot", "reddy"]
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+
+
+// 2. Object
+
+// In JavaScript, an object is a collection of properties. Properties are named values that are associated with an object. Objects can be used to represent a wide variety of things, such as people, places, things, or events.
+
+
+// The object in Js are always in key values pairs
+
+// for example
+
+// let myobj = {
+//     name: "pratik",
+//     age: 22
+// }
+
+// with in the {} all are object
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+
+
+// 3. Functions
+
+// A function in JavaScript is a block of code that performs a specific task. Functions are defined using the function keyword, followed by the name of the function and a list of parameters in parentheses. The function body is written inside curly braces.
+
+
+// In js function dclearation is
+
+// function() {}
+
+// you can also store in variable like
+
+// const myfunction = function() {
+//     const.log("pratik reddy")
+// }
+
+
+// if you want to check of any variable datatype one function is use is (typeof)
+
+// console.log(typeof bigNumber)
+
+
+// dataype checking unsing typeof
+
+// undefined   ----->  "undefined"
+// Null         ---->   "object"
+// boolean      ---->   "boolean"
+// Number       ---->   "number"
+// BigInt       --->    "undefined"
+// String       ---->   "string"
+// Symbol       ---->   "Symbol"
+// function     ---->   "function" (basically called object function)
