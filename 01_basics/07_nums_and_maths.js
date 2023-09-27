@@ -44,8 +44,3 @@ console.log(hundreds.toLocaleString('en-IN'));
 
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-// Here you talk about Maths in JS
-
-console.log(Math) // here you not very much
