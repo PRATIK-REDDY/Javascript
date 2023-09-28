@@ -52,3 +52,11 @@ console.log((Math.random() * 10) + 1)
 console.log((Math.random() * 10) + 1)
 
 // here you add 1 because to avoid (case like 0.01)
+
+
+// you wnat the values with in some range then
+
+let min = 20
+let max = 30
+
+console.log(Math.floor(Math.random() * (max - min + 1)) + min)
