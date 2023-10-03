@@ -33,3 +33,23 @@ console.log(myCreatedDate)
 // when even you face any difficulty to read any date then use toString() method
 
 console.log(myCreatedDate.toString())
+
+// here you create own date also in diff formet
+
+let myCreatedDate1 = new Date("2023-01-14");
+
+console.log(myCreatedDate1);
+
+// -------------------------------------------------------------------
+
+// here you discuss about timeStamp import function in data and time
+
+let myTimeStamp = Date.now();
+
+// console.log(myTimeStamp);   // this give the time value in mili sec
+// console.log(myCreatedDate.getTime());
+
+
+// if you want to convert this mili sec value in sec
+
+console.log(Math.floor(Date.now()/1000));
