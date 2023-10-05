@@ -50,4 +50,51 @@ const arr2 = new Array(1,2,3,4,5)
 
 // -------------------------------------------------------------------------------------------
 
-// here you learn about 
+// here you learn about indexof method in array
+
+// console.log(arr2.indexOf(4));
+
+
+// -------------------------------------------------------------------------------
+
+// here you learn about join method in Array
+
+// join is used to add all the element into a String
+
+const newArray = arr2.join()
+
+// console.log(arr2);
+
+// console.log(typeof newArray);   // check the typeof
+// console.log(newArray);
+
+
+
+// ------------------------------------------------------------------------------------------------------
+
+// Here you learn about (slice, splice) method in array
+
+
+// console.log("A ", arr2);
+
+
+// const newarr1 = arr2.slice(1,3);
+// console.log(newarr1)
+
+
+// console.log("B ", arr2);
+
+
+// const newarr2 = arr2.splice(1,3);
+// console.log("C ", arr2);
+// console.log(newarr2);
+
+
+// In JavaScript, the slice() method is used to return a shallow copy of a portion of an array. 
+// The splice() method is used to change the contents of an array by adding or removing elements.
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
