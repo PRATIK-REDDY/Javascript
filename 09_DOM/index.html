@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="demo">My name is R Pratik Reddy</h1>
+    <a href="www.google.com">Google</a>
+    <h2 name = "demo2">I am working as a FullStack Developer</h2>
+    <ol class="demo3">
+        <li>Home</li>
+        <li>Login</li>
+        <li>Contact</li>
+    </ol>
+    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, rem?</h2>
+        <script>
+            // we can use some method of javascrip
+
+            // 1.direct methods ------> ( these all direct methods give the result in HTMLCollection )
+            console.log(document.links);
+            console.log(document.doctype);
+            
+            // ..........etc
+
+            // 2. in-direct method 
+
+            console.log(document.getElementById('demo'));
+            console.log(document.getElementsByClassName('domo3'));
+            console.log(document.getElementsByName('demo2'));
+            console.log(document.getElementsByTagName('h1'));
+            console.log(document.querySelector('h2'));
+            console.log(document.querySelectorAll('h1,h2'));
+        </script>
+
+</body>
+</html>
