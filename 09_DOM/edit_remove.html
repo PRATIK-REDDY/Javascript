@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit And Remove Element</title>
+</head>
+
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+
+    <script>
+        function addLanguage(language) {
+            const newLanguage = document.createElement('li');
+            newLanguage.innerHTML = `${language}`;
+            document.querySelector('.language').appendChild(newLanguage)
+        }
+
+        // here you call the function
+        addLanguage("java");
+
+
+        // here we write the add a language in optimized way
+        function optimalLang(lang) {
+            const otherlang = document.createElement('li')
+            console.log(otherlang);
+            otherlang.appendChild(document.createTextNode(lang))
+            document.querySelector('.language').appendChild(otherlang)
+        }
+
+        optimalLang("Golang")
+
+
+        // ---------------here we see the Edit DOM -----------------------------
+        // Normal approch
+        const change =  document.querySelector('li:nth-child[3]')
+        change.innerHTML = "C++"
+    </script>
+
+</body>
+
+</html>

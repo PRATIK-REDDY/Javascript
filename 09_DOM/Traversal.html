@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversal</title>
+</head>
+<body>
+    
+    <!-- here you learn about traversal -->
+    <div class="perent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+
+    <script>
+        const a = document.querySelector('.perent'); 
+        console.log(a); 
+        // here we check children
+        console.log(a.children);
+
+        a.children[0].style.color = "red";
+        console.log(a.firstElementChild.innerHTML);
+        console.log(a.lastElementChild.innerHTML);
+
+        const firstday = document.querySelector('.day');
+        console.log(firstday);
+
+        // here you findout the perent
+        console.log(firstday.parentElement);
+
+        console.log(a.childNodes);
+    </script>
+
+</body>
+</html>

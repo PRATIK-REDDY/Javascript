@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>childNodes</title>
+</head>
+
+<body>
+
+    <script>
+        const a = document.createElement('div')
+        console.log(a);
+        a.className = "demo"
+        a.id = "first"
+
+        a.style.backgroundColor = "green"
+        a.style.width = "200px"
+        a.style.height = "200px"
+
+        // after all this operation we append the div
+        document.body.appendChild(a)
+
+        // use setAttribute
+        const b = document.createElement('div')
+        console.log(b);
+        b.setAttribute("id", "second")
+
+    </script>
+
+</body>
+
+</html>
