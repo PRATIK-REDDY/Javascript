@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<style>
+    #images ul li img {
+        width: 200px;
+        height: 200px;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <h2>Images</h2>
+
+        <div id="images">
+            <ul>
+                <li><img src="https://cdn.pixabay.com/photo/2023/12/08/09/13/vine-8437282_1280.jpg" alt="" id="flower">
+                </li>
+                <li><img src="https://cdn.pixabay.com/photo/2023/12/12/19/08/moutains-8445767_640.jpg" alt=""
+                        id="mountain"></li>
+                <li><img src="https://cdn.pixabay.com/photo/2023/12/13/13/37/robin-8446944_640.jpg" alt="" id="birds">
+                </li>
+                <li><img src="https://cdn.pixabay.com/photo/2023/12/09/10/10/woman-8439003_640.png" alt="" id="girl">
+                </li>
+                <li><img src="https://cdn.pixabay.com/photo/2023/10/27/09/18/mountains-8344543_1280.jpg" alt="" id="night">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+
+        // here you learn about event action
+
+        // old approch
+        // document.getElementById('flower').onclick = function() {
+        //     alert("owl clicked")
+        // }
+
+        // using this method you also preform Events
+
+        // attachEvent()
+        // jQuery - on
+
+
+        //  latest approch using addEventListener
+
+        // the third parameter is event capturing
+        // it is two type :- 
+        // 1. bublling
+        // 2. caturing
+        // document.getElementById('images').addEventListener('click', function(e) {
+        //     alert("owl clicked")
+        // }, false)
+
+        // document.getElementById('flower').addEventListener('click', function(e) {
+        //     alert("owl clicked")
+
+        //     // we can stop bublling
+        //     e.stopPropagation();
+        // }, false)
+
+        // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        // here you learn about preventDefault()
+
+        // document.getElementById('images').addEventListener('click', function(e) {
+        //     e.preventDefault();
+        //     alert("owl clicked")
+        // }, false)
+
+        // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        // type, timestamp, preventDefault()
+        // target, srcElement, currentTarget 
+        // clientX, clientY, screenX, screenY
+
+        // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        // here you do a task remove image
+        document.getElementById('images').addEventListener('click', function(e) {
+            // console.log(e.target.parentNode);
+
+            const imgremove = e.target.parentNode
+            imgremove.remove(); 
+
+        })
+
+    </script>
+</body>
+
+</html>
